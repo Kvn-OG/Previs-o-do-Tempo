@@ -35,7 +35,7 @@ main{
     justify-content: center;
 }
 
-#logo {
+.logo {
     width: 289px;
     height: 161px;
     position: absolute;
@@ -43,7 +43,7 @@ main{
     left: 815px;
 }
 
-#city-input{
+.city-input{
     width: 374px;
     height: 68px;
     border-radius: 41px;
@@ -54,19 +54,19 @@ main{
     padding: 12px 16px 14px;
 }
 
-#city-input, #search-container button{
+.city-input, .search-container button{
     margin-bottom: 1.5rem;
 }
 
-#city-input:focus{
+.city-input:focus{
     outline: none;
 }
 
-#city-input:hover{
+.city-input:hover{
     background-color: var(--hover-color);
 }
 
-#search-container{
+.search-container{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -74,7 +74,7 @@ main{
     position: relative;
 }
 
-#search-container::after{
+.search-container::after{
     position: absolute;
     content: '';
     height: 2px;
@@ -85,7 +85,7 @@ main{
     border-radius: 3px;
 }
 
-#search-container button{
+.search-container button{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,12 +96,12 @@ main{
     border: none;
 }
 
-#search-container button:hover{
+.search-container button:hover{
     cursor: pointer;
     background-color: var(--hover-color);
 }
 
-#search-container button img{
+.search-container button img{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,11 +109,11 @@ main{
     height: 34px;    
 }
 
-#data{
+.data{
     margin-top: 1.5rem;
 }
 
-#footer{
+.footer{
     position: absolute;
     bottom: 0;
     margin-bottom: 1.25rem;
