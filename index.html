@@ -9,22 +9,24 @@
 </head>
 <body>
     <main>
-        <div class="logo">
-            <img src="assets/images/ClouD-logo.pn" alt="logo-cloud">
+        <div>
+            <img id="logo" src="assets/images/ClouD-logo.png" alt="logo-cloud">
         </div>
         <div id="search-container">
             <input type="text" id="city-input" placeholder="Digite o nome da cidade">
             <button id="search-btn">
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <img src="assets/images/search.svg" alt="">
             </button>
         </div>
-        <span>
-            <h1>
-                <i class="fa-solid fa-location-dot"></i>
-                <span id="city">Tempo em Rio de Janeiro</span>
-                <img src="" alt="" id="country">
-            </h1>
-        </span>
+        <div id="data">
+            <span>
+                <h1>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span id="city">Rio de Janeiro</span>
+                    <img src="" alt="" id="country">
+                </h1>
+            </span>
+        </div>
         <p><span id="temperature">34</span>&deg;C</p>
         <div id="weather-data">
             <p id="description">Ensolarado</p>
