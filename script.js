@@ -1,4 +1,6 @@
 const key = "400d432abb66e77d9939c4d79c6144e1"
+const apiUnsplashUrl = "https://api.unsplash.com/search/photos/?query="
+const apiUnsplashKey = "&client_id=nkChcEATCwPaeySqWOtVlgvjMgwX1Khap03D5zFMHSo=1080"
 
 function showData(data){
     document.querySelector(".city").innerHTML = data.name
@@ -8,6 +10,9 @@ function showData(data){
     document.querySelector(".wind").innerHTML = data.wind.speed + " Km/h"
     document.querySelector(".weather-icon").src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`
     document.querySelector(".country").src = `https://countryflagsapi.netlify.app/flag/${data.sys.country}.svg`
+
+    const city = document.querySelector(".city-input").value
+    document.body.style.backgroundImage = `url("${apiUnsplashUrl + city + apiUnsplashKey}")`
 
     document.getElementById("weather-cont").classList.remove('hidden')
 }
