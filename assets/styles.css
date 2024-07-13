@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root{
     --input-color: #818181;
@@ -12,7 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', 'Sans-serif';
+    font-family: 'Poppins', 'Sans-serif';
 }
 
 body{
@@ -32,15 +32,20 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
+}
+
+.header{
+    width: 100%;
+    display: flex;
     justify-content: center;
+    margin-top: 8rem;
+    
 }
 
 .logo {
-    width: 289px;
-    height: 161px;
-    position: absolute;
-    top: 76px;
-    left: 815px;
+    width: 250px;
+    height: auto;
 }
 
 .city-input{
@@ -56,6 +61,7 @@ main{
 
 .city-input, .search-container button{
     margin-bottom: 1.5rem;
+    margin-top: 3rem;
 }
 
 .city-input:focus{
@@ -111,6 +117,45 @@ main{
 
 .data{
     margin-top: 1.5rem;
+}
+
+.weather-data{
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.details-container{
+    font-size: 1.3rem;
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    gap: 2px;
+    margin-top: 3rem;
+}
+
+.temperature{
+    font-size: 4rem;
+}
+
+.description{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.col{
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img{
+    margin-right: 1.25rem;
+}
+
+.details-container img{
+    width: 40px;
 }
 
 .footer{

@@ -10,7 +10,7 @@
 </head>
 <body>
     <main>
-        <div>
+        <div class="header">
             <img class="logo" src="assets/images/ClouD-logo.png" alt="logo-cloud">
         </div>
         <div class="search-container">
@@ -23,25 +23,26 @@
             <span>
                 <h1>
                     <i class="fa-solid fa-location-dot"></i>
-                    <span class="city">Rio de Janeiro</span>
-                    
+                    <span class="city"></span>
                 </h1>
             </span>
         </div>
-        <p><span class="temperature">34</span>&deg;C</p>
+        <p><span class="temperature"></span></p>
         <div class="weather-data">
-            <p class="description">Ensolarado</p>
-            <img src="" alt="Condições do tempo" class="weather_icon">
+            <img src="https://openweathermap.org/img/wn/02n.png" alt="Condições do tempo" class="weather-icon">
+            <span class="description"></span>
         </div>
         <div class="details-container">
-            <p class="moisture">
-                <i class="fa-solid fa-droplet"></i>
-                <span>29%</span>
-            </p>
-            <p class="wind">
-                <i class="fa-solid fa-wind"></i>
-                <span>11 Km/h</span>
-            </p>
+            <div class="col">
+                <img src="assets/images/droplet-solid.svg" alt="" class="humidity-icon">
+                <div>
+                    <p class="humidity"></p>
+                </div>
+            </div>
+            <div class="col">
+                <img src="assets/images/wind-solid.svg" alt="" class="wind-icon">
+                <p class="wind"></p>
+            </div>
         </div>
         <div class="footer">
             <p>
