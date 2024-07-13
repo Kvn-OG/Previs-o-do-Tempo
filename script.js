@@ -7,6 +7,9 @@ function showData(data){
     document.querySelector(".humidity").innerHTML = "Umidade " + data.main.humidity + '%'
     document.querySelector(".wind").innerHTML = data.wind.speed + " Km/h"
     document.querySelector(".weather-icon").src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`
+    document.querySelector(".country").src = `https://countryflagsapi.netlify.app/flag/${data.sys.country}.svg`
+
+    document.getElementById("weather-cont").classList.remove('hidden')
 }
 
 async function citySearch(city){

@@ -115,14 +115,25 @@ main{
     height: 34px;    
 }
 
+.data span h1 img{
+    height: 25px;
+}
+
 .data{
     margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
 }
 
 .weather-data{
     display: flex;
     align-items: center;
+    justify-content: center;
     text-transform: capitalize;
+}
+
+.hidden{
+    display: none;
 }
 
 .details-container{
@@ -136,6 +147,8 @@ main{
 
 .temperature{
     font-size: 4rem;
+    display: flex;
+    justify-content: center;
 }
 
 .description{
@@ -154,8 +167,12 @@ main{
     margin-right: 1.25rem;
 }
 
-.details-container img{
+.wind-icon{
     width: 40px;
+}
+
+.humidity-icon{
+    width: 30px;
 }
 
 .footer{
