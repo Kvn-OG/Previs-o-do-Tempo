@@ -28,3 +28,12 @@ function buttonClick(){
 
     citySearch(city)
 }
+
+document.addEventListener("keypress", function(e){
+    if (e.key === "Enter"){
+        const btn = document.querySelector(".search-btn");
+
+        buttonClick();
+        
+    }
+})
